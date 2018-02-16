@@ -8,6 +8,7 @@ RUN apt-get update \
   && apt-get install -y --no-install-recommends apt-utils \
   && apt-get install -y libmcrypt-dev mysql-client \
   && apt-get -qq install curl -y \
+  && apt-get install libzip-dev -y \
   && apt-get install zip unzip -y
 RUN docker-php-ext-configure intl
 RUN docker-php-ext-install intl
