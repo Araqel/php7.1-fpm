@@ -20,5 +20,4 @@ RUN apt-get update \
   && pecl install mongodb \
   && docker-php-ext-enable mongodb\
   && pecl install mailparse \
-  && pecl install zip \
-  && docker-php-ext-enable zip\
+  && docker-php-ext-install zip
